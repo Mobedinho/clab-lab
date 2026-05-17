@@ -5,11 +5,11 @@ nodes:
 
 router:
 kind: ceos
-image:
+image: docker.io/harsha258/ceos:4.32.0F
 
 switch:
 kind: ceos
-image:
+image: docker.io/harsha258/ceos:4.32.0F
 
 host1:
 kind: linux
