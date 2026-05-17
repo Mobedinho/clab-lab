@@ -1,0 +1,24 @@
+name: Vlab-lab
+
+topology:
+  nodes:
+    router:
+      kind: ceos
+      image: docker.io/harsha258/ceos:4.32.0F
+
+    switch:
+      kind: ceos
+      image: docker.io/harsha258/ceos:4.32.0F
+
+    host1:
+      kind: linux
+      image: alpine:latest
+
+    host2:
+      kind: linux
+      image: alpine:latest
+
+  links:
+    - endpoints: ["router:eth1", "switch:eth1"]
+    - endpoints: ["switch:eth5", "host1:eth1"]
+    - endpoints: ["switch:eth6", "host2:eth1"]
