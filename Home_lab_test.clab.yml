@@ -37,7 +37,6 @@ topology:
   links:
   
     - endpoints: ["CORE-switch:eth5", "patch-panel:eth1"]
-    - endpoints: ["CORE-switch:eth6", "AP1:eth1"] 
     
     - endpoints: ["ODF:eth1", "CORE-switch:eth1"]
     - endpoints: ["UPS:eth1", "PDU:eth1"]

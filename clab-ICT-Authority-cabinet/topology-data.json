@@ -1,0 +1,256 @@
+{
+  "name": "ICT-Authority-cabinet",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-e9ee6080dfec",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "3fff:172:20:20::/64",
+        "ipv6-gw": "3fff:172:20:20::1",
+        "external-access": true
+      }
+    }
+  },
+  "ssh-pub-keys": ["ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIH+218NGMbGl2vO6fPWTjUegbDyRMRMn+qwogpWAGEhG"],
+  "nodes": {
+    "CORE-switch": {
+      "index": "0",
+      "shortname": "CORE-switch",
+      "longname": "clab-ICT-Authority-cabinet-CORE-switch",
+      "fqdn": "CORE-switch.ICT-Authority-cabinet.io",
+      "group": "",
+      "labdir": "/home/mobedinho/clab1/clab-lab/clab-ICT-Authority-cabinet/CORE-switch",
+      "kind": "ceos",
+      "image": "docker.io/harsha258/ceos:4.32.0F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.20.20.6",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::6",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "00:1c:73:3c:ce:7b",
+      "labels": {
+        "clab-git-branch": "main",
+        "clab-git-hash": "108641d",
+        "clab-mgmt-net-bridge": "br-e9ee6080dfec",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/mobedinho/clab1/clab-lab/clab-ICT-Authority-cabinet/CORE-switch",
+        "clab-node-longname": "clab-ICT-Authority-cabinet-CORE-switch",
+        "clab-node-name": "CORE-switch",
+        "clab-node-type": "",
+        "clab-owner": "mobedinho",
+        "clab-topo-file": "/home/mobedinho/clab1/clab-lab/Home_lab_test.clab.yml",
+        "containerlab": "ICT-Authority-cabinet"
+      },
+      "port-bindings": [
+      ]
+    },
+    "ODF": {
+      "index": "1",
+      "shortname": "ODF",
+      "longname": "clab-ICT-Authority-cabinet-ODF",
+      "fqdn": "ODF.ICT-Authority-cabinet.io",
+      "group": "",
+      "labdir": "/home/mobedinho/clab1/clab-lab/clab-ICT-Authority-cabinet/ODF",
+      "kind": "linux",
+      "image": "alpine:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.3",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::3",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-git-branch": "main",
+        "clab-git-hash": "108641d",
+        "clab-mgmt-net-bridge": "br-e9ee6080dfec",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/mobedinho/clab1/clab-lab/clab-ICT-Authority-cabinet/ODF",
+        "clab-node-longname": "clab-ICT-Authority-cabinet-ODF",
+        "clab-node-name": "ODF",
+        "clab-node-type": "",
+        "clab-owner": "mobedinho",
+        "clab-topo-file": "/home/mobedinho/clab1/clab-lab/Home_lab_test.clab.yml",
+        "containerlab": "ICT-Authority-cabinet"
+      },
+      "port-bindings": [
+      ]
+    },
+    "PDU": {
+      "index": "2",
+      "shortname": "PDU",
+      "longname": "clab-ICT-Authority-cabinet-PDU",
+      "fqdn": "PDU.ICT-Authority-cabinet.io",
+      "group": "",
+      "labdir": "/home/mobedinho/clab1/clab-lab/clab-ICT-Authority-cabinet/PDU",
+      "kind": "linux",
+      "image": "alpine:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::2",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-git-branch": "main",
+        "clab-git-hash": "108641d",
+        "clab-mgmt-net-bridge": "br-e9ee6080dfec",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/mobedinho/clab1/clab-lab/clab-ICT-Authority-cabinet/PDU",
+        "clab-node-longname": "clab-ICT-Authority-cabinet-PDU",
+        "clab-node-name": "PDU",
+        "clab-node-type": "",
+        "clab-owner": "mobedinho",
+        "clab-topo-file": "/home/mobedinho/clab1/clab-lab/Home_lab_test.clab.yml",
+        "containerlab": "ICT-Authority-cabinet",
+        "outlets": "10",
+        "role": "power-distribution"
+      },
+      "port-bindings": [
+      ]
+    },
+    "UPS": {
+      "index": "3",
+      "shortname": "UPS",
+      "longname": "clab-ICT-Authority-cabinet-UPS",
+      "fqdn": "UPS.ICT-Authority-cabinet.io",
+      "group": "",
+      "labdir": "/home/mobedinho/clab1/clab-lab/clab-ICT-Authority-cabinet/UPS",
+      "kind": "linux",
+      "image": "alpine:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.5",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::5",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "capacity": "3000VA",
+        "clab-git-branch": "main",
+        "clab-git-hash": "108641d",
+        "clab-mgmt-net-bridge": "br-e9ee6080dfec",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/mobedinho/clab1/clab-lab/clab-ICT-Authority-cabinet/UPS",
+        "clab-node-longname": "clab-ICT-Authority-cabinet-UPS",
+        "clab-node-name": "UPS",
+        "clab-node-type": "",
+        "clab-owner": "mobedinho",
+        "clab-topo-file": "/home/mobedinho/clab1/clab-lab/Home_lab_test.clab.yml",
+        "containerlab": "ICT-Authority-cabinet",
+        "role": "power-source"
+      },
+      "port-bindings": [
+      ]
+    },
+    "patch-panel": {
+      "index": "4",
+      "shortname": "patch-panel",
+      "longname": "clab-ICT-Authority-cabinet-patch-panel",
+      "fqdn": "patch-panel.ICT-Authority-cabinet.io",
+      "group": "",
+      "labdir": "/home/mobedinho/clab1/clab-lab/clab-ICT-Authority-cabinet/patch-panel",
+      "kind": "linux",
+      "image": "alpine:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.4",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::4",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-git-branch": "main",
+        "clab-git-hash": "108641d",
+        "clab-mgmt-net-bridge": "br-e9ee6080dfec",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/mobedinho/clab1/clab-lab/clab-ICT-Authority-cabinet/patch-panel",
+        "clab-node-longname": "clab-ICT-Authority-cabinet-patch-panel",
+        "clab-node-name": "patch-panel",
+        "clab-node-type": "",
+        "clab-owner": "mobedinho",
+        "clab-topo-file": "/home/mobedinho/clab1/clab-lab/Home_lab_test.clab.yml",
+        "containerlab": "ICT-Authority-cabinet"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "endpoints": {
+        "a": {
+          "node": "CORE-switch",
+          "interface": "eth5",
+          "mac": "aa:c1:ab:a5:f3:36",
+          "peer": "z"
+        },
+        "z": {
+          "node": "patch-panel",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:31:11:48",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "ODF",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:25:64:a6",
+          "peer": "z"
+        },
+        "z": {
+          "node": "CORE-switch",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:df:3e:cd",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "UPS",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:c7:b6:4f",
+          "peer": "z"
+        },
+        "z": {
+          "node": "PDU",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:a2:93:74",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "PDU",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:8d:6b:2e",
+          "peer": "z"
+        },
+        "z": {
+          "node": "CORE-switch",
+          "interface": "eth24",
+          "mac": "aa:c1:ab:d0:dc:02",
+          "peer": "a"
+        }
+      }
+    }
+  ]
+}

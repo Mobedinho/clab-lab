@@ -1,0 +1,26 @@
+---
+CORE-switch:
+    username: admin
+    password: admin
+    platform: ceos
+    hostname: 172.20.20.6
+ODF:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.3
+PDU:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.2
+UPS:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.5
+patch-panel:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.4

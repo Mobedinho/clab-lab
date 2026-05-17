@@ -1,0 +1,28 @@
+name: Vlab-lab
+
+topology: 
+nodes:
+
+router:
+kind: ceos
+image:
+
+switch:
+kind: ceos
+image:
+
+host1:
+kind: linux
+image: alpine:latest
+
+host2:
+kind: linux
+image: alpine:latest
+
+
+links:
+
+
+- endpoints: ["router:eth1", "switch: eht1"]
+- endpoints: [,"switch:eth 5", "host1: eht1"]
+- endpoints: [,"switch:eht 6", "host2:eht1"]
